@@ -1,0 +1,267 @@
+/*
+    The Daily Prophet Theme
+    Color Palette:
+    - Parchment (Cream): #fdf6e3
+    - Ink (Black): #222222
+    - Sepia (Brown): #5a4a3a
+    - Border/Accent: #d3c5b4
+*/
+
+:root {
+    --parchment-bg: #fdf6e3;
+    --ink-text: #222222;
+    --sepia-accent: #5a4a3a;
+    --border-color: #d3c5b4;
+}
+
+/* Basic Setup */
+body {
+    background-color: var(--parchment-bg);
+    color: var(--ink-text);
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography & Headers */
+.main-header, .main-footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.main-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.sub-heading {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--sepia-accent);
+}
+
+.divider {
+    border-top: 2px solid var(--ink-text);
+    border-bottom: 1px solid var(--ink-text);
+    height: 3px;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.divider.full-width {
+    width: 100%;
+}
+
+/* Navigation */
+.main-nav {
+    width: 100%;
+    margin-top: -1rem; /* Pulls it up slightly to the divider */
+    margin-bottom: 1rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--sepia-accent);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    border-bottom-color: var(--sepia-accent);
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+}
+
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.hero-text .sub-headline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image-container {
+    flex: 1 1 400px;
+    padding: 10px;
+    background-color: #e9e0d1;
+    border: 1px solid var(--border-color);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-image {
+    border: 2px solid var(--sepia-accent);
+    display: block;
+    /* Animation: Gentle continuous movement */
+    animation: gentle-shake 8s ease-in-out infinite;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--sepia-accent);
+    color: var(--parchment-bg);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    border-radius: 2px;
+    border: 2px solid var(--sepia-accent);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--sepia-accent);
+    transform: translateY(-2px);
+}
+
+/* Services Section */
+.services-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.service-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--sepia-accent);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px; /* Enforce a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Animation: Subtle hover effect for "moving" images */
+.service-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--sepia-accent);
+    border-color: var(--sepia-accent);
+}
+
+
+/* Keyframe Animations */
+@keyframes gentle-shake {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-0.3deg) scale(1.01);
+    }
+    75% {
+        transform: rotate(0.3deg) scale(1.01);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+    .main-header h1 {
+        font-size: 3rem;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
