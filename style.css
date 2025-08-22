@@ -154,7 +154,7 @@ img {
 
 /* Parallax Section */
 .parallax-container {
-    min-height: 300px;
+    min-height: 500px;
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -235,7 +235,7 @@ img {
     display: block;
     margin-bottom: .5rem;
     font-family: 'Roboto', sans-serif;
-    color: var(--gsap-green);
+    color: silver;
 }
 
 .form-group input,
