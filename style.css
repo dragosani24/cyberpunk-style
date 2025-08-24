@@ -210,13 +210,14 @@ img {
 #parallax6 { background-image: url('img/cyberpunk/japan-cyberpunk-ho0z8jg556riyedr.jpg'); }
 
 .parallax-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+    padding-top: 21%;
+    padding-bottom: 21%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .parallax-text h2 {
