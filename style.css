@@ -230,6 +230,25 @@ img {
     font-size: 1.5rem;
 }
 
+.parallax-text-footer {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.parallax-text-footer h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.parallax-text-footer p {
+    font-size: 1.5rem;
+}
+
 /* Services Section */
 .services-section {
     padding: 2rem 0;
@@ -361,5 +380,13 @@ img {
 
     .parallax-text p {
         font-size: 1.5rem;
+    }
+
+    .parallax-text-footer h2 {
+        font-size: 2rem;
+    }
+
+    .parallax-text-footer p {
+        font-size: 1rem;
     }
 }
