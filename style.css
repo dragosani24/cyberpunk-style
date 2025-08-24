@@ -209,6 +209,27 @@ img {
 #parallax5 { background-image: url('img/cyberpunk/japan-cyberpunk-3o4y38b9cua28104.jpg'); }
 #parallax6 { background-image: url('img/cyberpunk/japan-cyberpunk-ho0z8jg556riyedr.jpg'); }
 
+.parallax-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 21%;
+    padding-bottom: 21%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.parallax-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.parallax-text p {
+    font-size: 1.5rem;
+}
+
 /* Services Section */
 .services-section {
     padding: 2rem 0;
@@ -333,23 +354,12 @@ img {
     .main-nav .nav-links li {
         margin: 0.5rem 0;
     }
-}
-.parallax-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-}
 
-.parallax-text h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
+    .parallax-text h2 {
+        font-size: 2rem;
+    }
 
-.parallax-text p {
-    font-size: 1.5rem;
+    .parallax-text p {
+        font-size: 1.5rem;
+    }
 }
