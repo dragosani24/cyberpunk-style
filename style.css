@@ -334,3 +334,22 @@ img {
         margin: 0.5rem 0;
     }
 }
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.parallax-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.parallax-text p {
+    font-size: 1.5rem;
+}
